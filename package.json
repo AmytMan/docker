@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docker:run":"docker run -dp 80:80 --name docker",
+    "docker:build":"docker build --no-cache -t docker .",
+    "docker:clean":"docker -rm -f docker"
   },
   "dependencies": {
     "react": "^18.3.1",
